@@ -1,0 +1,536 @@
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	
+</head>
+
+<script>
+	
+	
+	$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 100) {
+ 
+    $('.skillset').fadeIn();
+  }
+		if(y>100){
+			
+				document.getElementsByClassName("skillsettopic")[0].classList.add("increaseheight"); 
+		}
+				if(y<100){
+			
+				document.getElementsByClassName("skillsettopic")[0].classList.remove("increaseheight"); 
+		}
+	if (y < 100) {
+    $('.skillset').fadeOut();
+  }
+});
+	
+</script>
+<div class="wrapper">
+<div class="content">
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">&lt;<div class="navitem">&nbsp;Home&nbsp;</div> &gt;</a>
+  <a href="#home" >&lt;<div class="navitem">&nbsp;Skills&nbsp;</div> &gt;</a>
+ <a href="#home" >&lt;<div class="navitem">&nbsp;Project&nbsp;</div> &gt;</a>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="fullconainter">
+<div id="container" class="container">
+<div class="test" id="hello" >&lt; Hello World &gt;</div>
+<div class="introduction" id="intro" >Welcome to my World of Web Dev</div>
+</div>
+	</div><br>
+<div class="skillset1">
+<center><div class="skillsettopic" scroll-tag="#skill1">Skillset</div></center>
+<div class="skillsetitems">
+	
+	<div class="skillset" id="skill1"><img width="100px" src="JavaScript-logo.png"/><br><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star unchecked"></span>
+<span class="fa fa-star unchecked"></span><br>
+		<div style="color: darkred;" class="skilllevel">Biginner</div>
+	
+	
+	</div>
+	
+	<div class="skillset"><img  width="100px" src="kindpng_4640184.png"/><br><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star unchecked"></span>
+<span class="fa fa-star unchecked"></span><br>
+		<div style="color: darkred;" class="skilllevel">Biginner</div>
+	
+	</div>
+	<div class="skillset"><img  width="100px" src="5847f5bdcef1014c0b5e489c.png"/>
+	
+	
+	<br><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star unchecked"></span>
+<span class="fa fa-star unchecked"></span><br>
+		<div style="color: darkred;" class="skilllevel">Biginner</div>
+	
+	
+	
+	
+	
+	</div>
+	
+	
+	</div>
+</div>
+	</div>
+</div>
+<style>
+	.skilllevel{
+		
+		color: #626262;
+font-size: 15px;
+line-height: 1.2;
+font-weight: 100;
+	}
+	.checked{
+		color: #494949;
+font-size: 14px;
+font-weight: 300;
+line-height: 1.5;
+letter-spacing: 0.093em;
+		color: #8b0000;
+		padding-top:0.3rem;
+	}
+	.unchecked{
+		
+		color: white;
+	}
+	
+	html{
+		scroll-behavior: smooth;
+	}
+	a{
+		top:-50px;
+	}
+	a:first-child{
+		
+		
+		animation: fromup 1s forwards;
+		position: relative;
+		
+		top:-50px;
+		
+	}
+		a:nth-child(2){
+		
+		
+		animation: fromup 1s forwards;
+		position: relative;
+		animation-delay: 0.5s;	
+		top:-50px;
+		
+	}
+			a:nth-child(3){
+		
+		
+		animation: fromup 1s forwards;
+		position: relative;
+				animation-delay: 1s;
+				top:-50px;
+		
+	}
+	@keyframes fromup {
+		
+		
+		0%{
+			top:-50px;
+			
+		}
+			100%{
+			top:0px;
+			
+		}	
+	}
+
+	.skillsettopic{
+		margin-top: 20px;
+		margin-bottom: 30px;
+		
+		padding: 0.5rem;
+		border-radius: 20px;
+		background-color: white;
+		color: black;
+		font-size: 17px;
+line-height: 1.3;
+font-weight: 100;
+letter-spacing: 0.177em;
+		transition: all 275ms ease;
+		width: 0.4%;
+		color: white;
+	}
+	.skillsettopic::first-letter {
+
+  color: #8A2BE2;
+}
+	.increaseheight{
+		transition: all 275ms ease;	
+		width: 77%;
+		color: black;
+	}
+	.skillsetitems{
+		margin-top: 20px;
+		display: flex;
+		
+	}
+	.skillset{
+		background-color: white;
+		padding: 1rem;
+		border-radius: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		display: none;
+	}
+	body{
+		padding: 0rem;
+		padding-top: 0px;
+		position: absolute;
+		width: 100%;
+		background-attachment: fixed;
+		background: url(bg.jpg);
+	 overflow: scroll;
+	
+	}
+		/*animation: nooverflow 1s forwards;
+		animation-delay: 3s;
+		overflow-y: hidden;
+		overflow-x: hidden;
+	}
+	@keyframes nooverflow{
+			  0%   { overflow-y: none;
+		}
+
+	 100%  {
+		overflow-y: scroll;
+		}
+		
+		
+	}*/
+	h1{
+		  font-size: 35px;
+  line-height: 1.1;
+  letter-spacing: -0.014em;
+  font-weight: 900;
+}
+	
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+
+	display: flex;
+}
+	.topnav .navitem:hover {
+		
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.topnav .navitem{
+		
+		transition: all 275ms ease;	
+	}
+/* Style the links inside the navigation bar */
+.topnav a {
+	
+	margin-left: auto;
+	margin-right: auto;
+  float: left;
+  display: flex;
+  color: darkred;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	font-weight: 100;
+	margin-left: auto;
+}
+
+/* Change the color of links on hover */
+
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: darkred;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+	.skillset1{
+		width: 100%;
+		background-color: darkred;
+		margin-top: 150px;
+		padding: 1rem;
+		font-weight: 800;
+		color: white;
+		display: block;
+		height: 300px;
+		animation: fadeinskillset forwards,upward forwards;
+		animation-duration: 2s;
+		animation-delay: 2s;
+		opacity: 0;
+		padding-left: 0;
+		position: relative;
+		
+	}
+	@keyframes fadeinskillset{
+		
+		  0%   { opacity: 0;
+		top:100;
+		
+		}
+
+	 100%  {opacity: 1;
+		top:0;
+		}
+	
+	
+	}	
+		
+		@keyframes upward{
+		
+		  0%   {
+		top:100;
+		
+		}
+
+	 100%  {
+		top:0;
+		}
+	
+	
+	}
+	.fullconainter{
+		padding-top: 150px;
+		display: flex;
+		width: 100%;
+		
+		
+	}
+.container
+	{  
+		 background-color: darkred;
+		padding: 1rem;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	
+	animation: increaseintrobg forwards;
+
+animation-duration: 2s;
+		position: relative;
+	}
+	
+		@keyframes increaseintrobg{
+		
+		
+		  0%   { width: 500px;
+			top:100;
+			
+			}
+
+	 100%  {width: 460px;
+		 top:0;
+			
+			
+			}	
+	}
+	
+	
+	
+body {
+  font-family: "Barlow", sans-serif;
+overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+	  
+  min-height: 100vh;
+	
+}
+	#intro{
+	width: 100%;	
+		font-weight: 100;
+font-size: 13px;
+line-height: 0.9;
+letter-spacing: 0.6em;
+position: relative;
+left: 3;
+	transition: all 275ms ease;	
+		animation: increasetextsize forwards;
+		animation-duration: 2s;
+		color: white;
+		text-align: center;
+	}
+	#hello{
+position: relative;
+display: inline-block;
+font-size: 2.8em;
+font-weight: 800;
+color: #fafafa;
+overflow: show;
+background: linear-gradient(to left, white, #ff8f00 50%, white 50%);
+  background-size: auto;
+  background-clip: border-box;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-size: 80% 3%;
+transition: all 275ms ease;
+text-decoration: none;
+animation: example infinite,increasetextsize2 forwards;
+
+animation-duration: 2s;
+
+	}
+	
+	#hello:hover + #intro {
+    left: -0;
+		font-size: 10px;
+}
+	#hello:hover + #intro {
+    left: -0;
+		font-size: 10px;
+}
+#hello:hover {
+  background-position: 0 70%;
+  transform: scale(1.3,1.3)
+}
+	@keyframes increasetextsize{
+		
+		
+		  0%   { transform: scale(1,1) }
+
+	 100%  {transform: scale(0.8,0.8) }	
+	}
+		@keyframes increasetextsize2{
+		
+		
+		  0%   { 
+		
+			  transform: scale(1,1) }
+
+	 100%  {
+	
+		 transform: scale(1.3,1.3)
+			
+			
+			
+			}	
+	}
+	@keyframes example {
+
+		  0%   { background-position: 0%; }
+  50%  {background-position: 100%; }
+  100% { background-position: 0%; }
+}
+	@media only screen and (max-width: 800px) {
+		body {
+
+
+	
+}
+		
+		#intro{
+		line-height: 1.4;
+font-size: 10px;
+			text-align: left;
+			
+		}
+		.container{
+			
+			width: 90%;
+		}
+		.introduction{
+			
+			line-height: 2;
+font-size: 11px;
+		}
+}
+		@media only screen and (max-width:408px) {
+			#hello{
+				
+				font-size: 25px;
+			}
+			.navbar a{
+				
+				font-size: 10px;
+			}
+}
+	
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+	
+	.topnav {
+
+
+	display: block;
+}
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: flex;
+    text-align: left;
+  }
+}
+	
+	</style>
+<script>
+	$(".skillsettopic").on('click', function(event) {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+		var hash = document.getElementsByClassName("skillsettopic")[0].getAttribute("scroll-tag");
+		 
+    // Make sure this.hash has a value before overriding default behavior
+    if (hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+     
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} 
+</script>
