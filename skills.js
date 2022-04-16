@@ -1,0 +1,2 @@
+
+var data = '[{"nameofskill" : "Discord Bot", "link" : "https://github.com/srivat2001/onion-bot","imgofskill" : "https://beebom.com/wp-content/uploads/2018/02/discord-bots.jpg","desc" : "Bot with simple command made with Python using discord API and hosted using Flask", "langused" : "Python"},{"nameofskill" : "SRM Canteen", "link" : "https://github.com/srivat2001/SRMCANTEEN","imgofskill" : "srmcanteen.png","desc" : "3 Tier, Food Take Away Website, Design for College Canteen", "langused" : "HTRL,CSS,JS,Javascript,SQL,PHP"}]';
