@@ -10,6 +10,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anek+Odia:wght@100;200;300;400;500;600;700;800&display=swap');
 </style><script>
+	
+	$(document).ready(function() {
+	if ($(window).width() < 820) {
+   turnonpc("type");}});
+	
+	
 </script></head>
 <style>
 .mobileconsolecontainer {
@@ -152,7 +158,7 @@ font-weight: 100;
 }
 
 .vectorholder:hover {
-	animation-play-state: paused;
+	
 }
 
 @keyframes fromrightani {
@@ -171,7 +177,7 @@ font-weight: 100;
 }
 
 .console {
-	margin: 0;
+
 /*	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -183,6 +189,7 @@ font-weight: 100;
 	;
 	box-sizing: border-box;
 	margin: auto;
+	margin-left: 120;
 }
 
 .console header {
@@ -242,6 +249,7 @@ font-family: 'Anek Odia', sans-serif;
 	animation: fromleftani 1s forwards;
 	margin-left: auto;
 	margin-right: auto;
+	z-index: 5;
 		
 }
 
@@ -793,6 +801,7 @@ animation-delay: 0s;
 	.topnav a.icon {
 		float: right;
 		display: block;
+		margin-top: 10;
 	}
 	
 	.skillsetcontainer {
@@ -864,7 +873,7 @@ animation-delay: 0s;
 	}
 	
 	.monitorouter {
-		margin-top: 350px;
+	
 		display: flow-root list-item;
 	}
 	
@@ -916,22 +925,46 @@ height: 300;
 		float: none;
 		display: flex;
 		text-align: left;
-		margin: 0rem;
+		margin-top: 10;
 		width: fit-content;
 	}
 	.topnav a.active {
 		
 		margin-left: 1rem;
 	}
-	
+	.workinfocontainer a{
+		
+		left: 0;
+	}
+	.console {
+		
+		margin-left: 0;
+	}
+	.cmd,.cmdinput{
+   display: none;
+}
+	.cmd:nth-child(1){
+   display: block;
+}
+		.cmd:nth-child(2){
+   display: block;
+}	
+	.rightonbtn{
+		
+		display: none;
+	}
 }
 @media screen and (max-width: 482px) {
 	.monitorouter{
-			margin-top: 360px;
+			
 		
 	}
 		
 
+	}
+	.fa-bars{
+		
+		font-size: 20px;
 	}
 </style>
 
@@ -955,8 +988,8 @@ height: 300;
             <div class="navitem">&nbsp;Project&nbsp;</div>
             &gt;
          </a>
-         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-         <i class="fa fa-bars"></i>
+         <a style="margin: 1rem;" href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i  class="fa fa-bars"></i>
          </a>
       </div>
       <div class="fullconainter">
@@ -976,8 +1009,8 @@ height: 300;
                <div id="cmdconatiner" class="consolebody">
                   <p class="cmd">&gt; Hello Everyone</p>
                   <p class="cmd">&gt; I Love Making Websites from Scrach!</p>
-				  <p class="cmd">&gt;  Type, Turn on the Computer below for to see skills</p> 
-                  <p class="cmd">&gt;  Type, !help for cmds in this custom command promt</p>
+<!--<p class="cmd">&gt;  Type, Turn on the Computer below for to see skills</p> -->
+                  <p class="cmd">&gt;  Type, !help for cmds</p>
                   <p class="cmdinput"><span>&gt; </span><input class="enteremd" contenteditable="true"> </p>
                </div>
             </div>
@@ -1036,6 +1069,10 @@ var skillset = ["HTML", "CSS", "Js", "PHP", "SQL", "Python", "XAML", "React(lear
 input.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
         event.preventDefault();
+		if(input.value==""){
+			
+			return 0;
+		}
         if (input.value == "!help") {
             $("#cmdconatiner .cmdinput").before('<p class="cmd">!time - Getcurrenttime<br>!skill - Get Skills for me</p><br>!clrscr - clearscreen');
         } else if (input.value == "!time") {
@@ -1193,8 +1230,8 @@ margin-top: 10;
 	margin-right: auto;
 	display: grid;
 	grid-template-columns: auto auto;
-	padding: 10px;
-	width: 90%;
+	padding: 0px;
+	width: 100%;
 	margin: 1rem;
 	margin-left: auto;
 	margin-right: auto;
@@ -1252,8 +1289,8 @@ margin-bottom: 30px;
 
 	.projectmain{
 		margin-top: 20px;
-		padding: 1rem;
-		width: 80%;
+		padding: 0rem;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 		background-color: transparent;
@@ -1263,6 +1300,7 @@ font-family: 'Anek Odia', sans-serif;
 	.projectmain h1{
 		margin: 0px;
 		padding: 0px;
+		padding-left: 40px;
 		font-size: 200px;
 color: #676767;
 	}  
@@ -1280,16 +1318,22 @@ top: -79px;
 			
 			width: 75%;
 		}
+		.console .consolebody p {
+  font-size: 18px;
+  line-height: 2rem;
+  font-weight: 100;
+}
 		
 	}
 	.vectorholderposn{
 		
-		position: absolute;
-right: 0;
--webkit-transform: scaleX(-1);
-transform: scaleX(-1);
-		z-index: -10;
-opacity: 0.5;
+  position: static;
+  right: 0;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  z-index: -10;
+  opacity: 0.3;
+}
 	}
 	.stickbehind::after{
 		
@@ -1300,6 +1344,18 @@ opacity: 0.5;
 		.imgwrapper {
 height: initial;		
 		}
+		.workinfocontainer {
+  position: relative;
+  background-color: #000;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transition: all ease 1s;
+  width: 100%;
+  box-shadow: 0 2px 4px -1px rgba(255, 255, 255, 0.32),0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12);
+  border-top: 2px solid #737373;
+}
 	}
 	   </style>
    </div>
