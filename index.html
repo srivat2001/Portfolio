@@ -886,9 +886,7 @@ margin-right: auto;
                  margin-top: 0px;
              }
          }
-         @media screen and (max-width: 482px) {
-     
-         }
+
          .fa-bars{
          font-size: 20px;
          }
@@ -900,10 +898,20 @@ margin-right: auto;
               height: 50px;
               
           }
+          a:nth-child(2) {
+          left: 0px;
+          }
+
           .monitorfull{
-  
+              margin-top: 0px;
               animation: fromleftani 1s forwards;
           }
+                             @media screen and (max-width: 482px) {
+       .monitorfull{
+           margin-top: 140px;
+                                 
+                                 }
+         }
             @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
                .divhd{
                border-top: 1px solid #343434;
@@ -1052,7 +1060,7 @@ margin-right: auto;
                    }
                        .monitorouter{
         /*    height: 600px;*/
-                           margin-top: 180px;
+                         
                            z-index: 5;
          }
                    
@@ -1132,9 +1140,27 @@ margin-right: auto;
                </div>
             </div>
             <style>
+                .icons{
+display: flex;
+margin-left: auto;
+width: 80%;
+margin-right: auto;
+                }
+                .fa-linkedin-square{
+                 font-size: 36px;
+margin-left: 23px;
+margin-bottom: 8px;
+margin-right: 5px;
+                }
+                .icons a{
+                 animation: none;
+                    color: black;
+                    top: 0px;
+                }
             </style>
             
           <div class="monitorfull" style="display: block;">
+              <div class="icons"><a href="https://www.linkedin.com/in/srivathsan-g-9932121ba/"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a><a href="https://github.com/srivat2001"><i class="fa fa-github" style="font-size:36px"></i></a></div>
    <div onoff="on" class="monitorouter">
       <div class="screen pconoffbtn">
          <div id="skillset1" class="skillset1" style="display: block;">
