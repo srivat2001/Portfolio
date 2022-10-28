@@ -131,7 +131,7 @@
          }
          .vectorholder {
          position: relative;
-         animation: fromrightani ease 3s infinite;
+       
          }
          .vectorholder:hover {
          }
@@ -150,18 +150,13 @@
          }
          }
          .console {
-         /*	position: absolute;
-         top: 50%;
-         left: 50%;
-         -ms-transform: translate(-50%, -50%);
-         transform: translate(-50%, -50%);*/
          font-family: 'Fira Mono';
          width: 100%;
          height: 300px;
          ;
          box-sizing: border-box;
          margin: auto;
-         margin-left: 120;
+        
          }
          .console header {
          border-top-left-radius: 15px;
@@ -211,7 +206,7 @@ box-shadow: rgba(255, 255, 255, 0.36) 0px 1px 1px 0px inset, rgba(122, 0, 0, 0.3
          position: relative;
          color: white;
          height: inherit;
-         animation: fromleftani 1s forwards;
+        
          margin-left: auto;
          margin-right: auto;
          z-index: 5;
@@ -597,7 +592,7 @@ background-size: 3em 3em;
          margin-left: auto;
          margin-right: auto;
          background: black;
-         height: 357px;
+       
          overflow-y: scroll;    
          }
          @keyframes upward {
@@ -1038,13 +1033,13 @@ margin-right: auto;
                color: #676767;
                }  
               .vectorholderposn{
-               position: static;
-               right: 0;
+               position: absolute;
+               right: -18px;
                -webkit-transform: scaleX(-1);
                transform: scaleX(-1);
                z-index: 5;
-               opacity: 0.3;
-               z-index: 1;    
+               opacity: 1;
+                  
                }
                @media screen and (max-width: 806px) {
                    .vectorholderposn{
@@ -1115,9 +1110,7 @@ margin-right: auto;
                      <div id="cmdconatiner" class="consolebody">
                         <p class="cmd">&gt; Hello Everyone, Iam Srivathsan G</p>
                         <p class="cmd">&gt; I Love Making Websites from Scrach!</p>
-                        <!--<p class="cmd">&gt;  Type, Turn on the Computer below for to see skills</p> -->
-                        <p class="cmd">&gt;  Type, !help for cmds</p>
-                        <p class="cmdinput"><span>&gt; </span><input class="enteremd" contenteditable="true"> </p>
+      
                      </div>
                   </div>
                </div>
@@ -1262,6 +1255,9 @@ margin-right: 5px;
                <h1>My Work</h1>
                <div class="rect"></div>
                <div class="workconatiner">
+        
+               </div>
+                               <div class="smallprojects">
         
                </div>
                 <style>
